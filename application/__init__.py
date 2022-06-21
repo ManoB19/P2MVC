@@ -6,8 +6,4 @@ app = Flask(__name__,
             template_folder=os.path.abspath("application/view/templates"))
 
 from application.controller import home_controller
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-app.run()
+from application.controller import noticia_controller
